@@ -2,7 +2,7 @@ const Product = require('../models/Product')
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://localhost/masksrus', {
+mongoose.connect('mongodb+srv://unai:gomagoma4@cluster0-3co1b.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
