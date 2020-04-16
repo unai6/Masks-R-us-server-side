@@ -9,7 +9,7 @@ const userSchema = new Schema(
         shippingAddress: String,
         cartList: [{
             productId: {type: Schema.Types.ObjectId, ref: 'Product'},
-            quantity: {type: Number}
+            quantity: {type: Number, default: 1}
         }],
         wishList: [{ type: Schema.Types.ObjectId, ref: 'Product' }]
     },
