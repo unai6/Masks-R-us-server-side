@@ -106,7 +106,7 @@ router.get("/user", isLoggedIn(), (req, res, next) => {
     const findEmail = await User.findOne({email:email})
     
     if(!email|| !password|| !shippingAddress){
-     res.status(401).json('You must fill the gaps!')
+     res.status(400 ).json('You must fill the gaps!')
     }
 
     
