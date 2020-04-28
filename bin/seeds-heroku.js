@@ -42,7 +42,7 @@ products = [
       color: 'verde',
       size: 'universal',
       stock: '55',
-      category: ['indsutrial']
+      category: ['industrial']
     },
   
     {
