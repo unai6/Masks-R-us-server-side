@@ -3,7 +3,7 @@ const router = express.Router();
 const createError = require("http-errors");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
-const User = require("../../models/User");
+const User = require("../../models/User");  
 
 
 // middlewares
@@ -25,10 +25,10 @@ router.post(
     async (req, res, next) => {
 
         const { email, password, shippingAddress } = req.body
-        //console.log({email, password, shippingAddress})
+        
 
         try {
-            const emailExists = await User.findOne({ email }, 'email');
+            const emailExists = await User.findOne({ email });
 
             if (emailExists) return next(createError(400));
             else {

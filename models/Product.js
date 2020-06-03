@@ -9,7 +9,7 @@ const productSchema = {
     originalPrice: String,
     actualPrice: String,
     feedback: [{ }],// backlog
-    Rating: [ ], 
+    rating: [ ], 
     photo: String,
     shippingTime: String,
     material: String,
